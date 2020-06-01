@@ -2,9 +2,9 @@ import { Theme as MaterialTheme } from '@material-ui/core';
 import { blue, teal, pink, purple, indigo, deepPurple, red, lightBlue, cyan } from '@material-ui/core/colors';
 import createTheme from './theme';
 
-export type themeName = 'orbita' | 'nutror' | 'blinket';
-export type Theme = MaterialTheme & { themeName: themeName };
-export type color = typeof blue | typeof teal | typeof pink;
+export type ThemeName = 'orbita' | 'nutror' | 'blinket';
+export type Theme = MaterialTheme & { themeName: ThemeName };
+export type Color = typeof blue | typeof teal | typeof pink;
 
 export const themes = {
   alumy: deepPurple,
@@ -18,13 +18,11 @@ export const themes = {
   telescope: purple
 }
 
-export const getTheme = (theme: themeName): Theme  => {
+export const getTheme = (theme: ThemeName): Theme  => {
   const t = createTheme(themes[theme]);
   return { themeName: theme, ...t };
 };
 
 export const listThemes = (): Theme[] => {
-  const t: Theme[] = [];
-  Object.keys(themes).forEach((theme: themeName) => t.push(getTheme(theme)));
-  return t;
+  return Object.keys(themes).map((theme: ThemeName) => getTheme(theme));
 }

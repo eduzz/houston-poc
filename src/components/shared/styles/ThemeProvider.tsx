@@ -1,9 +1,9 @@
 import React from 'react';
 import { ThemeProvider as ThemeProviderMaterial } from '@material-ui/core/styles';
-import { getTheme } from '.';
+import { getTheme, ThemeName } from '.';
 
 interface IProps {
-  theme: 'orbita' | 'nutror' | 'blinket';
+  theme: ThemeName;
   children: React.ReactElement
 }
 
