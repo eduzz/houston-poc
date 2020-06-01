@@ -12,7 +12,7 @@ module.exports = {
     '@storybook/addon-actions',
     '@storybook/addon-storysource',
     '@storybook/addon-a11y',
-    //'storybook-addon-material-ui/register'
+    'storybook-addon-material-ui/register'
   ],
   webpackFinal: async config => {
     config.module.rules.push({

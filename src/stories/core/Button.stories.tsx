@@ -1,8 +1,10 @@
 import * as React from 'react';
-import { Button } from './index';
+import { Button } from '../../index';
 import { storiesOf } from '@storybook/react';
+// import {muiTheme} from 'storybook-addon-material-ui';
+// import { listThemes } from '../../components/shared/styles';
 
-storiesOf('Design System/Button', module)
+storiesOf('Core Components/Button', module)
 .add('Types', () => (
     <>
       <Button variant='contained' color='primary'>Primary</Button>

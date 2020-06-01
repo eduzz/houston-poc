@@ -8,7 +8,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import { storiesOf } from '@storybook/react';
 
-storiesOf('Design System/Drawer', module)
+storiesOf('Core Components/Drawer', module)
 .add('SimpleDrawer', () => (
       <Drawer
         variant="permanent"

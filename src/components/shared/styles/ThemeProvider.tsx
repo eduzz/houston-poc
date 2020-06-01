@@ -1,19 +1,17 @@
 import React from 'react';
-import { ThemeProvider as ThemeProviderMaterialUi } from '@material-ui/core/styles';
-import { themes } from './index';
-import { IThemeType } from '../../../interfaces/Theme';
+import { ThemeProvider as ThemeProviderMaterial } from '@material-ui/core/styles';
+import { getTheme } from '.';
 
 interface IProps {
-  theme: IThemeType;
+  theme: 'orbita' | 'nutror' | 'blinket';
   children: React.ReactElement
 }
 
 const ThemeProvider: React.FC<IProps> = ({ theme, children }) => {
-  const currentTheme = themes.find(t => t.themeName === theme);
   return (
-    <ThemeProviderMaterialUi theme={currentTheme ? currentTheme :  themes[0]}>
+    <ThemeProviderMaterial theme={getTheme(theme)}>
       {children}
-    </ThemeProviderMaterialUi>
+    </ThemeProviderMaterial>
   );
 }
 

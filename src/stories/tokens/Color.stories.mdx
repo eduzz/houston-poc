@@ -1,0 +1,32 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/addon-docs/blocks';
+import { themes } from '../../components/shared/styles';
+
+<Meta title="Tokens/Colors" />
+
+# Colors
+
+<ColorPalette>
+  {Object.keys(themes).map(key => {
+    const theme = themes[key];
+    return (
+      <ColorItem
+        title={key}
+        colors={[
+          theme[50],
+          theme[100],
+          theme[200],
+          theme[300],
+          theme[400],
+          theme[500],
+          theme[600],
+          theme[700],
+          theme[800],
+          theme[900],
+          theme['A100'],
+          theme['A200'],
+          theme['A400'],
+          theme['A700']
+        ]}
+      />
+  )})}
+</ColorPalette>

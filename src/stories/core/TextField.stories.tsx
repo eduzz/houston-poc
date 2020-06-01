@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { TextField as MaterialTextField } from './index';
+import { TextField as MaterialTextField } from '../../index';
 import { storiesOf } from '@storybook/react';
-import TextField from './TextField';
+import TextField from '../../components/TextField';
 
-storiesOf('Design System/TextField', module)
+storiesOf('Core Components/TextField', module)
 .add('Types', () => (
     <>
       <MaterialTextField label='Teste' variant="outlined" InputLabelProps={{ shrink: true }}/>

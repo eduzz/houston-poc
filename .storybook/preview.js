@@ -6,7 +6,7 @@ import { ThemeProvider } from '../src';
 
 addParameters({
   options: {
-    showRoots: true,
+    showRoots: true
   },
   docs: { page: DocsPage },
   dependencies: {
@@ -22,7 +22,7 @@ addParameters({
 
 addDecorator(withA11y);
 addDecorator(story => (
-  <ThemeProvider theme='orbita'>
+  <ThemeProvider theme='blinket'>
     {story()}
   </ThemeProvider>
 ));
