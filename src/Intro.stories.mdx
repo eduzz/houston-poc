@@ -1,0 +1,35 @@
+import designSystem from './design-system.svg';
+import logo from './logo.svg';
+
+<Meta title="Design System/Intro" />
+
+<img src={designSystem} height="200px" width="100%" />
+
+# Get started
+
+Houston Design System is a reusable component library that helps Houstoun contributors build UIs faster. The goal is to make building durable UIs more productive and satisfying.
+
+## Install
+
+SDS components are written in React, and its stories are written in [Component Story Format].
+
+Add SDS to your project.
+
+`npm install --save @eduzz/houston`
+
+### **Use**
+
+Import components you want into your UI
+
+`import { Button, Badge } from ‘@eduzz/houston’;`
+
+and use them like so
+
+```
+  const example = () => (
+    <div>
+      <Button appearance="primary" onClick={() => 0}>Do something</Button>
+      <Badge onClick={this.clear}>Cool</Badge>
+    </div>
+  )
+```
