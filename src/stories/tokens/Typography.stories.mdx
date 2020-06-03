@@ -1,0 +1,66 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import { fonts } from '../../components';
+
+<Meta title='Tokens/Typography' />
+
+# Typography
+
+ import { fonts } from '@eduzz/houston';
+
+ **Fonts props**
+ <div>
+  <table>
+    {Object.keys(fonts).map(p =>
+      <tr>
+        <td>{p}</td>
+        <td>fonts.{p}</td>
+      </tr>
+    )}
+  </table>
+</div>
+
+
+**Font Family:**
+<div>{fonts.fontFamily}</div>
+
+**Weights:**
+<div>
+  <table>
+    {Object.keys(fonts.weights).map(w =>
+      <tr style={{ fontWeight: fonts.weights[w] }}>
+        <td>{w}</td>
+        <td>{fonts.weights[w]}</td>
+        <td>fonts.weights.{w}</td>
+      </tr>
+    )}
+  </table>
+</div>
+
+**Sizes:**
+<div>
+  <table>
+    {Object.keys(fonts.sizes).map(s =>
+    <tr>
+      <td>{s}</td>
+      <td>{fonts.sizes[s]}</td>
+      <td>fonts.sizes.{s}</td>
+      <td style={{ fontSize: fonts.sizes[s] }}>We are Houston call us! we solve problems</td>
+    </tr>)}
+  </table>
+</div>
+
+**Line Height:**
+<div>
+  <table>
+    {Object.keys(fonts.lineHeight).map(l =>
+    <tr>
+      <td>{l}</td>
+      <td>{fonts.lineHeight[l]}</td>
+      <td>fonts.lineHeight.{l}</td>
+      <td style={{ lineHeight: fonts.lineHeight[l] }}>We are Houston call us! we solve problems</td>
+    </tr>)}
+  </table>
+</div>
+
+
+

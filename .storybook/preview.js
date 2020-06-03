@@ -22,7 +22,7 @@ addParameters({
 
 addDecorator(withA11y);
 addDecorator(story => (
-  <ThemeProvider theme='blinket'>
+  <ThemeProvider theme='orbita'>
     {story()}
   </ThemeProvider>
 ));

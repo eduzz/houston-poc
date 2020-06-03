@@ -3,6 +3,13 @@ import { Color } from '.';
 
 const createTheme = (colors: Color) => {
   const theme = createMuiTheme({
+    typography: {
+      fontFamily: 'Open Sans',
+      fontWeightLight: 300,
+      fontWeightRegular: 400,
+      fontWeightMedium: 600,
+      fontWeightBold: 700,
+    },
     palette: {
       primary: {
         main: colors[900],
