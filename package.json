@@ -23,7 +23,7 @@
     "lint:js": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.html,.ts,.tsx,.mjs --report-unused-disable-directives",
     "lint:package": "sort-package-json",
     "release": "npm run build && ./scripts/release.sh",
-    "start": "start-storybook -p 80"
+    "start": "start-storybook -p 6006"
   },
   "husky": {
     "hooks": {
