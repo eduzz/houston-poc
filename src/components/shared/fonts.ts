@@ -22,6 +22,8 @@ const lineHeight = {
   confortable: 1.8
 }
 
+const spacings = [ 4, 8, 12, 16, 24, 32 ];
+
 const fontFamily = 'Open Sans';
 
-export default { weights, sizes, lineHeight, fontFamily };
+export default { weights, sizes, lineHeight, fontFamily, spacings };
