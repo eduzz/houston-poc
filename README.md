@@ -1,6 +1,6 @@
 # Houston Design System
 
-<img src="src/design-system.png" width="100%" />
+<img src="src/design-system.svg" width="100%" />
 
 [![NPM](https://img.shields.io/npm/v/@eduzz/houston.svg)](https://www.npmjs.com/package/@eduzz/houston) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 

@@ -18,7 +18,8 @@
   "scripts": {
     "build": "tsc",
     "build-docs": "build-storybook --docs",
-    "build-storybook": "build-storybook",
+    "build-storybook": "build-storybook -c .storybook -o .out",
+    "deploy-storybook": "storybook-to-ghpages --out=.out",
     "lint": "eslint .",
     "lint:js": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.html,.ts,.tsx,.mjs --report-unused-disable-directives",
     "lint:package": "sort-package-json",
@@ -67,6 +68,7 @@
     "@storybook/addon-info": "^5.3.18",
     "@storybook/addon-storysource": "^5.3.8",
     "@storybook/react": "^5.3.8",
+    "@storybook/storybook-deployer": "^2.8.6",
     "@types/jest": "^25.2.1",
     "auto": "^7.11.0",
     "babel-eslint": "^10.0.3",
@@ -117,15 +119,9 @@
       "released"
     ]
   },
-  "buildpacks": [
-    {
-      "url": "heroku/nodejs"
-    },
-    {
-      "url": "https://github.com/Root-App/heroku-buildpack-storybook.git"
-    },
-    {
-      "url": "https://github.com/heroku/heroku-buildpack-static.git"
-    }
-  ]
+  "storybook-deployer": {
+    "gitUsername": "JonathasRodrigues",
+    "gitEmail": "jonathas.rodrigues@eduzz.com",
+    "commitMessage": "Deploy Storybook to github pages"
+  }
 }

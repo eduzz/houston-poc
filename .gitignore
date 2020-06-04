@@ -10,6 +10,7 @@ dist
 .rpt2_cache
 storybook-static
 .cache
+.out
 
 # misc
 .DS_Store
