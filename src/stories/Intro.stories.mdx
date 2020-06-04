@@ -1,7 +1,7 @@
 import designSystem from '../design-system.svg';
 import logo from '../logo.svg';
 
-<Meta title="Design System/Intro" />
+<Meta title="Design System/Introduction" />
 
 <img src={designSystem} height="200px" width="100%" />
 
@@ -21,15 +21,10 @@ Add SDS to your project.
 
 Import components you want into your UI
 
-`import { Button, Badge } from ‘@eduzz/houston’;`
+`import { Button } from ‘@eduzz/houston’;`
 
 and use them like so
 
 ```
-  const example = () => (
-    <div>
-      <Button appearance="primary" onClick={() => 0}>Do something</Button>
-      <Badge onClick={this.clear}>Cool</Badge>
-    </div>
-  )
+  const example = () => <Button appearance="primary" onClick={doSomething}>Do something</Button>;
 ```
