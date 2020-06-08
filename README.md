@@ -1,4 +1,4 @@
-# Houston Design System
+# Houston Design Product
 
 <img src="src/design-system.svg" width="100%" />
 

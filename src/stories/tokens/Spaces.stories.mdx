@@ -1,0 +1,32 @@
+import { Meta, Typeset, Preview  } from '@storybook/addon-docs/blocks';
+import { fonts, Typography } from '../../components';
+
+
+<Meta title='Tokens/Spaces' />
+
+# Spaces
+
+<div>
+  <div style={{ display: 'flex' }}>
+    {fonts.spacings.map(s =>
+    <div style={{ width: s, height: s, backgroundColor: 'green', marginRight: 30 }}>
+     </div>)}
+  </div>
+  <div style={{ display: 'flex' }}>
+    {fonts.spacings.map(s =>
+    <div style={{ width: s, height: s, marginRight: 30 }}>
+      <p>{s}</p>
+    </div>)}
+  </div>
+</div>
+
+
+<div>
+  <table>
+    {fonts.spacings.map(s =>
+    <tr>
+      <td>{s}</td>
+      <td>fonts.spacings.{s}</td>
+    </tr>)}
+  </table>
+</div>

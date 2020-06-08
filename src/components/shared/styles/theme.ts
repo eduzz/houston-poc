@@ -1,5 +1,6 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 import { Color } from '.';
+import fonts from '../fonts';
 
 const createTheme = (colors: Color) => {
   const theme = createMuiTheme({
@@ -9,6 +10,24 @@ const createTheme = (colors: Color) => {
       fontWeightRegular: 400,
       fontWeightMedium: 600,
       fontWeightBold: 700,
+      h1: {
+        fontSize: fonts.sizes['xx-large']
+       },
+      h2: {
+        fontSize: fonts.sizes['x-large']
+      },
+      h3: {
+        fontSize: fonts.sizes['large']
+      },
+      h4: {
+        fontSize: fonts.sizes['medium']
+      },
+      h5: {
+        fontSize: fonts.sizes['normal']
+      },
+      h6: {
+        fontSize: fonts.sizes['small']
+      }
     },
     palette: {
       primary: {
@@ -22,6 +41,13 @@ const createTheme = (colors: Color) => {
   });
 
   theme.overrides = {
+    MuiCssBaseline: {
+      '@global': {
+        '@font-face': {
+          fontFamily: fonts.fontFamily
+        },
+      },
+    },
     MuiTextField: {
       root: {
         color: theme.palette.primary.main,

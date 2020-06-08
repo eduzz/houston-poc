@@ -1,11 +1,24 @@
-import { Meta, Typeset } from '@storybook/addon-docs/blocks';
-import { fonts } from '../../components';
+import { Meta, Typeset, Preview  } from '@storybook/addon-docs/blocks';
+import { fonts, Typography } from '../../components';
+
 
 <Meta title='Tokens/Typography' />
 
 # Typography
 
- import { fonts } from '@eduzz/houston';
+ `import { Typography } from '@eduzz/houston';`
+
+**Examples**
+<Preview>
+  <Typography variant='h1'>We are Houston call us! we solve problems</Typography>
+  <Typography variant='h2'>We are Houston call us! we solve problems</Typography>
+  <Typography variant='h3'>We are Houston call us! we solve problems</Typography>
+  <Typography variant='h4'>We are Houston call us! we solve problems</Typography>
+</Preview>
+
+# Fonts
+
+ `import { fonts } from '@eduzz/houston';`
 
  **Fonts props**
  <div>
@@ -72,7 +85,3 @@ import { fonts } from '../../components';
     </tr>)}
   </table>
 </div>
-
-
-
-

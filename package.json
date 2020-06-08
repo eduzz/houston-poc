@@ -1,6 +1,6 @@
 {
   "name": "@eduzz/houston",
-  "version": "0.0.1",
+  "version": "0.0.1-beta",
   "description": "Houston design system",
   "repository": {
     "type": "git",
@@ -18,9 +18,9 @@
   "scripts": {
     "build": "tsc",
     "build-docs": "build-storybook --docs",
-    "build-storybook": "build-storybook -c .storybook -o .out",
+    "build-storybook": "build-storybook -c .storybook -o storybook-static",
     "chromatic": "CHROMATIC_APP_CODE=gb5kxw9j0je chromatic",
-    "deploy-storybook": "storybook-to-ghpages --out=.out",
+    "deploy-storybook": "storybook-to-ghpages --out=storybook-static",
     "lint": "eslint .",
     "lint:js": "cross-env NODE_ENV=production eslint --cache --cache-location=.cache/eslint --ext .js,.jsx,.html,.ts,.tsx,.mjs --report-unused-disable-directives",
     "lint:package": "sort-package-json",
